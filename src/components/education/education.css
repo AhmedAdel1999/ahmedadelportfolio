@@ -1,0 +1,52 @@
+.education-section{
+    padding: 50px 0px 20px 0px;
+    border-bottom: 2px solid #ddd;
+}
+.education-head{
+    margin-bottom: 40px;
+}
+.education-head p{
+    color:#7a798c;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.education-head h2{
+    font-weight: 800;
+    font-size: 50px;
+    color: #100f3a;
+}
+.education-body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.rightside{
+    display: flex;
+    justify-content: flex-end;
+}
+.content div{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    color:#7a798c;
+    font-weight: bold;
+    font-size: 14px;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.content{
+    max-width: 300px;
+}
+.content p{
+    margin: 0px;
+    text-align: left;
+    padding-left: 60px;
+    text-transform: capitalize;
+}
+.leftside{
+    display: flex;
+    justify-content: flex-start;
+}

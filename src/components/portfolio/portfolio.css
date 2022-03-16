@@ -1,0 +1,109 @@
+.portfolio-section{
+    padding: 50px 0px 20px 0px;
+    border-bottom: 2px solid #ddd;
+}
+.portfolio-head{
+    margin-bottom: 40px;
+}
+.portfolio-head p{
+    color:#7a798c;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.portfolio-head h2{
+    font-weight: 800;
+    font-size: 50px;
+    color: #100f3a;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+.filters button{
+    padding: 10px 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #ddd;
+    color:#7a798c;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.filters button.activebtn{
+    color: #ddd;
+    background-color: #8583e1;
+}
+.portfolio-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    gap: 30px;
+}
+@media (max-width:992px){
+    .portfolio-items{
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+}
+.item-img{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    cursor: pointer;
+}
+.item-img img{
+    object-fit: fill;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s linear;
+}
+.item-img:hover img{
+    transform: scale(1.2);
+}
+.item-img div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+    background-color: #000;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.item-img:hover div{
+    opacity: 0.8;
+}
+.item-img a{
+    position: absolute;
+    z-index: 5;
+    left: calc(50% - 60px);
+    top: 100%;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #7a798c;
+    color:#000;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.item-img:hover a{
+    top: calc(50% - 20px);
+}
+.item-footer{
+    background-color: #fff;
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: capitalize;
+}

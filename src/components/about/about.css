@@ -1,0 +1,113 @@
+.about-section{
+    padding: 50px 0px 20px 0px;
+    border-bottom: 2px solid #ddd;
+}
+.about-head{
+    margin-bottom: 40px;
+}
+.about-head p{
+    color:#7a798c;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+.about-head h2{
+    font-weight: 800;
+    font-size: 50px;
+    color: #100f3a;
+}
+.presentation{
+    padding-bottom: 40px;
+}
+.presentation p{
+  line-height: 25px;
+  text-align: left;
+  
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.personal-info{
+    overflow: hidden;
+}
+.personal-info h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #100f3a;
+}
+
+.personal-info table tr td{
+    padding: 5px 5px 5px 0px;
+}
+.personal-info table tr td:first-child{
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    gap: 5px;
+    color: rgb(161, 159, 159);
+    white-space: nowrap;
+}
+.personal-info table tr td:last-child{
+    padding-left: 10px;
+}
+@media(max-width:565px){
+    .personal-info table{
+        display: block;
+        max-width: 250px;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .personal-info table::-webkit-scrollbar{
+        height: 3px;
+        display: block;
+    }
+      /* Track */
+    .personal-info table::-webkit-scrollbar-track{
+        border-radius: 5px;
+      }
+      /* Handle */
+    .personal-info table::-webkit-scrollbar-thumb{
+        background: #100f3a;
+        border-radius: 5px;
+      }
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.languages h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #100f3a;
+}
+.progress{
+    display: flex;
+    gap: 5px;
+}
+.progress span{
+    border: 1px solid #a5a5a5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.arabic h4{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #100f3a;
+}
+.arabic .progress span{
+    background-color: #a5a5a5;
+}
+.english h4{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #100f3a;
+}
+.english .progress span:nth-child(-n+4){
+    background-color: #a5a5a5;
+}
