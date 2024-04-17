@@ -53,7 +53,7 @@ const Portfolio = () =>{
                         return(
                             <div className={`single-item ${item.class}`} key={item.id}>
                                 <div className="item-img">
-                                    <img src={item.imgUrl} alt="" loading="lazy" />
+                                    <img src={item.imgUrl} alt={`${item.siteName} image`} loading="lazy" />
                                     <div></div>
                                     <a href={item.siteUrl} target="_blank" >view</a>
                                 </div>
