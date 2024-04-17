@@ -1,22 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import mixitup from "mixitup";
 import sitesInfo from "../../db";
 import "./portfolio.css"
 const Portfolio = () =>{
-    const[val,setVal]=useState("ALL")
-    const[final,setFinal]=useState([...sitesInfo])
+
     const filters = [
         {id:1,label:"ALL"},
         {id:2,label:"REACTJS"},
-        {id:3,label:"HTML/CSS"}
+        {id:3,label:"HTMLCSS"}
     ]
+
+    const[val,setVal]=useState("ALL")
     const handelFilter = (e) =>{
-       setVal(e.target.value)
-       if(e.target.value==="ALL"){
-           setFinal([...sitesInfo])
-       }else{
-        setFinal([...sitesInfo.filter((x)=>x.label===e.target.value)])
-       }
+        setVal(e.target.value)
     }
+    
+    useEffect(() => {
+        mixitup(".portfolio-items", {
+          selectors: {
+            target: ".single-item",
+          },
+          animation: {
+            duration: 500
+          }
+        });
+    }, []);
+
     return(
         <div className="portfolio-section" id="portfolio">
             <div className="portfolio-head">
@@ -28,8 +37,10 @@ const Portfolio = () =>{
                     filters.map((btn)=>{
                         return(
                             <button key={btn.id} value={btn.label}
-                            className={`${val===btn.label?"activebtn":""}`}
-                            onClick={handelFilter}>
+                            className={`control mixitup-control ${val===btn.label?"activebtn":""}`}
+                            onClick={handelFilter}
+                            data-filter={`.${btn.label}`}
+                            >
                             {btn.label}
                             </button>
                         )
@@ -38,9 +49,9 @@ const Portfolio = () =>{
             </div>
             <div className="portfolio-items">
                 {
-                    final.map((item)=>{
+                    sitesInfo.map((item)=>{
                         return(
-                            <div className="single-item" key={item.id}>
+                            <div className={`single-item ${item.class}`} key={item.id}>
                                 <div className="item-img">
                                     <img src={item.imgUrl} alt="" loading="lazy" />
                                     <div></div>

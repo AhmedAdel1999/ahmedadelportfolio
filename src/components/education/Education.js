@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import "./education.css"
 const Education = () =>{
     return(
@@ -9,24 +10,30 @@ const Education = () =>{
             </div>
             <div className="education-body">
                 <div className="rightside">
-                    <div className="content">
-                        <div>computer science</div>
-                        <p>
-                            I,m studying at The Faculty Of Computing 
-                            And Information Department Of Computer 
-                            Science in the final semester
-                        </p>
-                    </div>
+                    <Fade right>
+                        <div className="content">
+                            <div>computer science</div>
+                            <p>
+                                I have graduated From The Faculty Of Computing 
+                                And Information, Department Of Computer 
+                                Science with good gpa (2018 - 2022)
+                            </p>
+                        </div>
+                    </Fade> 
                 </div>
                 <div className="leftside">
-                    <div className="content">
-                        <div>experience</div>
-                        <p>
-                            I gain all of my experience in The 
-                            Front-End Developement with self studying
-                            from online courses and my own projects
-                        </p>
-                    </div>
+                    <Fade left>
+                        <div className="content">
+                            <div>experience</div>
+                            <p>
+                                <h4 style={{fontWeight:"bold"}}>Lucidya-لوسيديا :</h4><br />
+                                it was a data analysis company,we have our own project.
+                                that analyzing customer’s  data on social media sites and giving them negative and positive comments.
+                                i was working with the frontend team on this project to fix bugs and issues.
+                                (1/9/2022 - 10/1/2023)
+                            </p>
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>

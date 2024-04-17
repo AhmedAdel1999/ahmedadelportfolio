@@ -1,6 +1,7 @@
 .education-section{
     padding: 50px 0px 20px 0px;
     border-bottom: 2px solid #ddd;
+    overflow: hidden;
 }
 .education-head{
     margin-bottom: 40px;

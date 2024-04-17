@@ -1,4 +1,6 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
+import AnimatedText from 'react-animated-text-content';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen,faLocationDot,faEnvelope,faStar,faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 import "./about.css"
@@ -10,17 +12,32 @@ const About = () =>{
                 <h2>About Me</h2>
             </div>
             <div className="presentation">
-                <p>
-                    I am a talented Front end Developer From Egypt.
-                    I develop websites. I,m in The Final Semester in Computer Science.
-                    Interested in trying to keep up with modern and modern designs, 
-                    and taking care of web features, while maintaining ease of use, 
-                    and maximizing the benefit of simplicity and elegance, are the controls 
-                    that we commit to in all my projects.
-                </p>
+            <AnimatedText
+                type="words" // animate words or chars
+                animation={{
+                    x: '200px',
+                    y: '-20px',
+                    scale: 1.1,
+                    ease: 'ease-in-out',
+                }}
+                animationType="float"
+                interval={0.02}
+                duration={0.8}
+                tag="p"
+                className="animated-paragraph"
+                includeWhiteSpaces
+                threshold={0.1}
+                rootMargin="20%"
+                >
+                I am a talented React JS Developer. Have more than two years of experience in this field. I develop websites Interested in trying to keep up with modern
+                designs, and taking care of web features, while maintaining ease of use, and maximizing the benefit of simplicity
+                and elegance, and the controls that we commit to in all my projects.
+                </AnimatedText>
+                
             </div>
             <div className="info">
                <div className="personal-info">
+                   <Fade left>
                    <h3>personal information</h3>
                    <table>
                        <tbody>
@@ -61,8 +78,10 @@ const About = () =>{
                             </tr>
                        </tbody>
                    </table>
+                   </Fade>   
                </div>
                <div className="languages">
+                   <Fade right>
                    <h3>languages</h3>
                    <div className="arabic">
                        <h4>Arabic</h4>
@@ -94,6 +113,7 @@ const About = () =>{
                            <span></span>
                         </div>
                     </div>
+                   </Fade>
                 </div>
             </div>
         </div>

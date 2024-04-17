@@ -1,9 +1,9 @@
 import React from "react";
-import Typical from 'react-typical'
+import TypeAnimation from 'react-type-animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook,faWhatsapp,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub,faWhatsapp,faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import profileImg from "../../img/ahmed.jpg"
-import pdf from "../../img/AhmedAdelFinalCv.pdf"
+import pdf from "../../img/AhmedAdel-front-end.pdf"
 import "./profileInfo.css"
 const ProfileInfo = () =>{
     return(
@@ -14,11 +14,12 @@ const ProfileInfo = () =>{
             <div className="profile-head">
                 <h3>Ahmed Adel</h3>
                 <p>
-                    <span>I,M A </span>
-                    <Typical
-                        steps={['Front-end Developer',1000,'Talanted Programmer',1000]}
-                        loop={Infinity}
+                    <span>I AM A </span>
+                    <TypeAnimation
+                        cursor={false}
+                        sequence={['Front End Developer.', 2000, '']}
                         wrapper="span"
+                        repeat={Infinity}
                     />
                 </p>
             </div>
@@ -29,8 +30,8 @@ const ProfileInfo = () =>{
                     </a>
                </li>
                <li>
-                   <a href="https://www.facebook.com/profile.php?id=100009419612365" target="_blank">
-                       <FontAwesomeIcon icon={faFacebook} />
+                   <a href="https://github.com/AhmedAdel1999" target="_blank">
+                       <FontAwesomeIcon icon={faGithub} />
                     </a>
                </li>
                <li>
