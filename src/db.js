@@ -10,6 +10,8 @@ import img9 from "./img/image-9.png"
 import img10 from "./img/image-10.png"
 import img11 from "./img/image-11.png"
 import img12 from "./img/image-12.png"
+import img13 from "./img/image-13.png"
+
 const sitesInfo=[
     {
         id:1,
@@ -46,6 +48,15 @@ const sitesInfo=[
         githubUrl:'https://github.com/AhmedAdel1999/brilliantt',
         imgUrl:img4,
         siteName:"brilliant"
+    },
+    {
+        id:13,
+        label:"REACTJS",
+        class:"ALL REACTJS",
+        siteUrl:'https://admin-dashboardapp.netlify.app/',
+        githubUrl:'https://github.com/AhmedAdel1999/admindashboard',
+        imgUrl:img13,
+        siteName:"admin dashboard"
     },
     {
         id:11,

@@ -54,8 +54,11 @@ const Portfolio = () =>{
                             <div className={`single-item ${item.class}`} key={item.id}>
                                 <div className="item-img">
                                     <img src={item.imgUrl} alt={`${item.siteName} image`} loading="lazy" />
-                                    <div></div>
-                                    <a href={item.siteUrl} target="_blank" >view</a>
+                                    <div className="cover"></div>
+                                    <div className="media">
+                                        <a href={item.siteUrl} target="_blank" >Live</a>
+                                        <a href={item.githubUrl} target="_blank" >Github</a>
+                                    </div>
                                 </div>
                                 <div className="item-footer">
                                     <span>{item.siteName}</span>
