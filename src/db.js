@@ -15,42 +15,6 @@ import img14 from "./img/image-14.png"
 
 const sitesInfo=[
     {
-        id:1,
-        label:"HTML/CSS",
-        class:"ALL HTMLCSS",
-        siteUrl:'https://yamifooood.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/yamifood',
-        imgUrl:img1,
-        siteName:"yamifood"
-    },
-    {
-        id:2,
-        label:"HTML/CSS",
-        class:"ALL HTMLCSS",
-        siteUrl:'https://healthlabb.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/healthlab',
-        imgUrl:img2,
-        siteName:"health lab"
-    },
-    {
-        id:3,
-        label:"HTML/CSS",
-        class:"ALL HTMLCSS",
-        siteUrl:'https://onnextt.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/onnext',
-        imgUrl:img3,
-        siteName:"on next"
-    },
-    {
-        id:4,
-        label:"HTML/CSS",
-        class:"ALL HTMLCSS",
-        siteUrl:'https://brilliantt.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/brilliantt',
-        imgUrl:img4,
-        siteName:"brilliant"
-    },
-    {
         id:14,
         label:"REACTJS",
         class:"ALL REACTJS",
@@ -141,6 +105,44 @@ const sitesInfo=[
     //     imgUrl:img10,
     //     siteName:"facebook clone"
     // },
+    {
+        id:3,
+        label:"HTML/CSS",
+        class:"ALL HTMLCSS",
+        siteUrl:'https://onnextt.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/onnext',
+        imgUrl:img3,
+        siteName:"on next"
+    },
+    {
+        id:4,
+        label:"HTML/CSS",
+        class:"ALL HTMLCSS",
+        siteUrl:'https://brilliantt.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/brilliantt',
+        imgUrl:img4,
+        siteName:"brilliant"
+    },
+    {
+        id:1,
+        label:"HTML/CSS",
+        class:"ALL HTMLCSS",
+        siteUrl:'https://yamifooood.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/yamifood',
+        imgUrl:img1,
+        siteName:"yamifood"
+    },
+    {
+        id:2,
+        label:"HTML/CSS",
+        class:"ALL HTMLCSS",
+        siteUrl:'https://healthlabb.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/healthlab',
+        imgUrl:img2,
+        siteName:"health lab"
+    },
+    
+    
     
 ]
 export default sitesInfo

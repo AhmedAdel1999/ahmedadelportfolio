@@ -10,7 +10,7 @@ const Portfolio = () =>{
         {id:3,label:"HTMLCSS"}
     ]
 
-    const[val,setVal]=useState("REACTJS")
+    const[val,setVal]=useState("ALL")
     const handelFilter = (e) =>{
         setVal(e.target.value)
     }
@@ -24,6 +24,7 @@ const Portfolio = () =>{
             duration: 500
           }
         });
+        
     }, []);
 
     return(
