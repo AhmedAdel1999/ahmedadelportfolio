@@ -33,6 +33,15 @@ const sitesInfo=[
         siteName:"admin dashboard"
     },
     {
+        id:8,
+        label:"REACTJS",
+        class:"ALL REACTJS",
+        siteUrl:'https://tasks-managerapp.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/todaApp',
+        imgUrl:img8,
+        siteName:"Tasks Manager"
+    },
+    {
         id:11,
         label:"REACTJS",
         class:"ALL REACTJS",
@@ -59,15 +68,7 @@ const sitesInfo=[
         imgUrl:img12,
         siteName:"job portal"
     },
-    {
-        id:8,
-        label:"REACTJS",
-        class:"ALL REACTJS",
-        siteUrl:'https://tooddooapp.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/todaApp',
-        imgUrl:img8,
-        siteName:"todo app"
-    },
+    
     {
         id:7,
         label:"REACTJS",
