@@ -42,6 +42,15 @@ const sitesInfo=[
         siteName:"Tasks Manager"
     },
     {
+        id:7,
+        label:"REACTJS",
+        class:"ALL REACTJS",
+        siteUrl:'https://profilesstoreapp.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/profileStoreApp',
+        imgUrl:img7,
+        siteName:"profiles store"
+    },
+    {
         id:11,
         label:"REACTJS",
         class:"ALL REACTJS",
@@ -49,6 +58,15 @@ const sitesInfo=[
         githubUrl:'https://github.com/AhmedAdel1999/hotel-system',
         imgUrl:img11,
         siteName:"hotel system"
+    },
+    {
+        id:12,
+        label:"REACTJS",
+        class:"ALL REACTJS",
+        siteUrl:'https://jobsportalapp.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/jobportal',
+        imgUrl:img12,
+        siteName:"recruitment system"
     },
     {
         id:5,
@@ -59,25 +77,9 @@ const sitesInfo=[
         imgUrl:img5,
         siteName:"ecommerce app"
     },
-    {
-        id:12,
-        label:"REACTJS",
-        class:"ALL REACTJS",
-        siteUrl:'https://jobsportalapp.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/jobportal',
-        imgUrl:img12,
-        siteName:"job portal"
-    },
     
-    {
-        id:7,
-        label:"REACTJS",
-        class:"ALL REACTJS",
-        siteUrl:'https://profilesstoreapp.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/profileStoreApp',
-        imgUrl:img7,
-        siteName:"profiles store"
-    },
+    
+    
     
     // {
     //     id:6,
