@@ -3,7 +3,7 @@ import TypeAnimation from 'react-type-animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub,faWhatsapp,faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import profileImg from "../../img/ahmed.jpg"
-import pdf from "../../img/AhmedAdel-front-end.pdf"
+import pdf from "../../img/AhmedAdel_Frontend_CV.pdf"
 import "./profileInfo.css"
 const ProfileInfo = () =>{
     return(
@@ -13,15 +13,7 @@ const ProfileInfo = () =>{
             </div>
             <div className="profile-head">
                 <h3>Ahmed Adel</h3>
-                <p>
-                    <span>I AM A </span>
-                    <TypeAnimation
-                        cursor={false}
-                        sequence={['Front End Developer.', 2000, '']}
-                        wrapper="span"
-                        repeat={Infinity}
-                    />
-                </p>
+                <p>Frontend Developer (ReactJS)</p>
             </div>
             <ul className="profile-links">
                <li>

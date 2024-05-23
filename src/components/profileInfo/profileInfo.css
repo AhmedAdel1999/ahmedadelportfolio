@@ -36,8 +36,11 @@
 }
 .profile-head h3{
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.profile-head p{
+    font-weight: bold;
 }
 .profile-links{
     width: 100%;

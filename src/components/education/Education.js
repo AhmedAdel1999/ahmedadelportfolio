@@ -30,7 +30,7 @@ const Education = () =>{
                                 it was a data analysis company,we have our own project.
                                 that analyzing customer’s  data on social media sites and giving them negative and positive comments.
                                 i was working with the frontend team on this project to fix bugs and issues.
-                                (1/9/2022 - 10/1/2023)
+                                (1/9/2022 - 10/9/2023)
                             </p>
                         </div>
                     </Fade>
