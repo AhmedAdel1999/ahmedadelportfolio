@@ -61,15 +61,6 @@ const sitesInfo=[
     },
     
     {
-        id:12,
-        label:"REACTJS",
-        class:"ALL REACTJS",
-        siteUrl:'https://jobsportalapp.netlify.app',
-        githubUrl:'https://github.com/AhmedAdel1999/jobportal',
-        imgUrl:img12,
-        siteName:"recruitment system"
-    },
-    {
         id:11,
         label:"REACTJS",
         class:"ALL REACTJS",
@@ -78,7 +69,15 @@ const sitesInfo=[
         imgUrl:img11,
         siteName:"hotel system"
     },
-    
+    {
+        id:12,
+        label:"REACTJS",
+        class:"ALL REACTJS",
+        siteUrl:'https://jobsportalapp.netlify.app',
+        githubUrl:'https://github.com/AhmedAdel1999/jobportal',
+        imgUrl:img12,
+        siteName:"recruitment system"
+    },
     
     
     // {
